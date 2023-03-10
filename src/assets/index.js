@@ -10,12 +10,12 @@ import close from "./close.svg";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
-import git from "./tech/git.png";
+import gitHub from "./tech/github.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
+import jQuery from "./tech/jQuery.png";
 import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
+import csharp from "./tech/csharp.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
@@ -42,12 +42,12 @@ export {
   css,
   docker,
   figma,
-  git,
+  gitHub,
   html,
   javascript,
-  mongodb,
+  jQuery,
   nodejs,
-  reactjs,
+  csharp,
   redux,
   tailwind,
   typescript,

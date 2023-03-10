@@ -7,12 +7,12 @@ import {
     typescript,
     html,
     css,
-    reactjs,
+    csharp,
     redux,
     tailwind,
     nodejs,
-    mongodb,
-    git,
+    jQuery,
+    gitHub,
     figma,
     docker,
     meta,
@@ -77,8 +77,8 @@ import {
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "C#",
+      icon: csharp,
     },
     {
       name: "Redux Toolkit",
@@ -93,16 +93,16 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "jQuery",
+      icon: jQuery,
     },
     {
       name: "Three JS",
       icon: threejs,
     },
     {
-      name: "git",
-      icon: git,
+      name: "Github",
+      icon: gitHub,
     },
     {
       name: "figma",

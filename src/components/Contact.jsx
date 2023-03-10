@@ -27,8 +27,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     setLoading(true);
+
     emailjs.send(
       'service_9ekrsfl',
       'template_7rndv82',
@@ -36,31 +36,29 @@ const Contact = () => {
         from_name: form.name,
         to_name: 'Elshan',
         from_email: form.email,
-        to_email: 'elshanml@code.edu.az',
-        message: form.message
+        to_email: 'elshanmal@code.edu.az',
+        message: form.message,
       },
 
       'bapj-3kinGnX_uaDN'
     )
-    .then(
-      () => {
+      .then(() => {
         setLoading(false);
         alert("Thank you. I will get back to you as soon as possible.");
 
         setForm({
-          name: "",
-          email: "",
-          message: "",
+          name: '',
+          email: '',
+          message: '',
         });
       },
-      (error) => {
-        setLoading(false);
-        console.error(error);
+        (error) => {
+          setLoading(false);
+          console.error(error);
 
-        alert("Opps, something went wrong. Please try again.");
-      }
-    );
-};
+          alert("Opps, something went wrong. Please try again.");
+        });
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -84,6 +82,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
+              autoComplete="off"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
 
             />
@@ -97,6 +96,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
+              autoComplete="off"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
 
             />
