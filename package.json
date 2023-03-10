@@ -1,5 +1,4 @@
 {
-  "homepage": "http://ElshanAli.github.io/3D-Portfolio",
   "name": "3d-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -7,8 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploye": "npm run build",
-    "deploye": "gh-pages -d build",
     "preview": "vite preview"
   },
   "dependencies": {
